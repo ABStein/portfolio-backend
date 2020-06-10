@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "jobs",
+  "info": {
+    "name": "job"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "job_description": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "company": {
+      "type": "string",
+      "required": true
+    },
+    "employment_length": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
