@@ -24,6 +24,16 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "repo": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "live_site": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
